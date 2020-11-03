@@ -1,6 +1,8 @@
+//02.11.20
+//search machine
 #include <iostream>
 #include <string>
-
+#include "bases.h"
 
 using namespace std;
 
@@ -25,8 +27,27 @@ void search_in_db()
 
 }
 
+//search in gotten bases
+void search_in_bases()
+{
+    char first_letter;
+
+    string gotten_word = "";
+
+    bool stop_search_in_bases = false ;
+    cout<<"Enter any word :";
+    cin>>gotten_word;
+    first_letter=gotten_word[0];
+    if (gotten_word[0] == 'A' )
+    {
+        cout<<"First letter is A"<<endl;
+    }
+
+
+}
 int main()
 {
-    search_in_db();
+    initialization_data();
+    search_in_bases();
     return 0;
 }
